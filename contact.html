@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fresca&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Londrina+Sketch&display=swap');
+    
+    @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+    }
+        
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #222;
+  color: white;
+  user-select: none;
+}
+
+img {
+  -webkit-user-drag: none;
+  pointer-events: none;
+  user-select: none;
+}
+
+.logo {
+  text-align: left;
+  font-size: 29px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 16px;
+  color: white;
+  font-family: "Sixtyfour Convergence", sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  transform: scale(1.20);
+  box-shadow: 0 0 25px white;
+  background-color: white;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ff3400;
+  color: white;
+}
+
+/* Main content styling */
+
+
+/* Contact form styling */
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  background-color: #222;
+  padding: 30px;
+  text-align: left;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.contact-form h2 {
+  color: #ff2b35c0;
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #333;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #ff3400;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #ff5722;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form label {
+  color: #ccc;
+}
+
+.footer {
+  text-align: center;
+  background-color: grey;
+  padding: 15px 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  color: white;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+@keyframes animate-fire-colors {
+  0% { background-position: 0%; }
+  50% { background-position: 100%; }
+  100% { background-position: 0%; }
+}
+
+</style>
+
+<script>
+// Disable right-click
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+</script>
+</head>
+
+<body>
+
+<!-- Status message for online/offline -->
+<div id="status-message"></div>
+
+<!-- Main content -->
+<div class="logo">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5mJ5ixT9rZIzGEw6lc9KfjYui954_w6do8-mYep1ELOc7ZptfXYQR7BmZKjUkgYIsLpkd_9yyVempUstsekmOBOX7_3wsWtVV7jh1m2pkDqlGzwbKzK2r1Oh4GgmU8sIgfVdzS6EqUdBLhOCfV-j24mfqxwfXoMN2-r8e9uZ0H07lMdFa1GEKr6BCxX4/w256-h256-p-k-no-nu/Picsart_24-10-17_13-14-13-325.png" alt="logo">
+    <b><h1>FIRETASK<div style="font-size:10px;font-family: 'Fresca',sans-serif;"><br><div style="font-size:13px;">Free APIs & Codes for Every Need</div></div></h1></b>
+</div>
+
+<hr style="border-color:#6b6b6b;">
+<div class="topnav">
+  <a href="#home">Home</a>
+  <a href="#api">API</a>
+  <a class="active" href="#contact">Contact</a>
+  <a href="setting.html">Settings</a>
+</div>
+
+  <div class="contact-form">
+    <h2>Contact Us</h2>
+    <form action="submit_form.php" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required placeholder="Your name..">
+      
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" required placeholder="Your email..">
+      
+      <label for="message">Message</label>
+      <input id="message" name="message"  required placeholder="Write your message.."></input>
+      
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+<!-- Footer Section -->
+<div class="footer">
+  <p>©2024-25 FireTask || All Rights Reserved</p>
+</div>
+
+</body>
+</html>
